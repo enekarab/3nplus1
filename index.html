@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3n +1</title>
+    <title>3n + 1</title>
 </head>
 <body> 
 
@@ -14,41 +14,18 @@
     <div id="idAusgabeHtml">Hier kommt die Rechnung...</div>
 
     <script>
-       // function fDo() { 
-         //   var vZahl = parseInt(document.getElementById("idZahl").value);
-           // var vAusgabeHtml = "";
-//
-  //          if (vZahl % 2 == 0) {
-    //            vZahl / 2
-      //      } else {
-        //        3 * vZahl +1
-          //  }
-//
-  //          if (vZahl != 1) {
-    //            return
-      //      } else {
-        //        vAusgabeHtml = vAusgabeHtml + vZahl + "->";
-          //  }
-            
-
-
-            function fDo(){
+        function fDo() {
             var vZahl = parseInt(document.getElementById("idZahl").value);
             var vAusgabeHtml = "";
-  for (i=vZahl; i!=1;){
-    if (i % 2 == 0) {
-                vZahl / 2
-            } else {
-                3 * vZahl +1
+
+            while (vZahl != 1) {
+                if (vZahl % 2 == 0) {
+                    vZahl = vZahl / 2;
+                } else {
+                    vZahl = 3 * vZahl + 1;
+                }
+                vAusgabeHtml = vAusgabeHtml + vZahl + "->";
             }
-            vAusgabeHtml = vAusgabeHtml + vZahl + "->";
-  }
-  return vAusgabeHtml;
-
-
-
-
-    
 
             document.getElementById("idAusgabeHtml").innerHTML = vAusgabeHtml;
         }
