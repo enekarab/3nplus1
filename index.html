@@ -25,11 +25,13 @@
                     vZahl = 3 * vZahl + 1;
                 }
                 vAusgabeHtml = vAusgabeHtml + vZahl + "->";
+		    const++;
             }
 				
 		
             document.getElementById("idAusgabeHtml").innerHTML = vAusgabeHtml;
-        }
+        	vAusgabeHtml = vAusgabeHtml + "Anzahl: " + const
+	}
     </script>
 </body>
 </html>
