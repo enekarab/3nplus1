@@ -25,10 +25,12 @@
                     vZahl = 3 * vZahl + 1;
                 }
                 vAusgabeHtml = vAusgabeHtml + vZahl + "->";
+                schritte++;
             }
 				
-		Anzahl Berechnung: 
+		
             document.getElementById("idAusgabeHtml").innerHTML = vAusgabeHtml;
+            alert("Anzahl der Schritte: " + schritte);
         }
     </script>
 </body>
